@@ -5,7 +5,7 @@ videos = os.listdir(rt)
 #path for original frames
 wrt_ori = './data/all_imgs/all'
 #path for background frames
-wrt_bg = '/content/drive/My Drive/sc-duc/bg'
+wrt_bg = '/content/drive/My Drive/background'
 # wrt_bg = './data/all_imgs/bg'
 if not os.path.exists(wrt_ori):
     os.mkdir(wrt_ori)

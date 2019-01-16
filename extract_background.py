@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import cv2, os
-rt = './data/track2-dataset'
+rt = '/content/drive/My Drive/track2-dataset'
 videos = os.listdir(rt)
 #path for original frames
 wrt_ori = './data/all_imgs/all'

@@ -11,15 +11,15 @@ frame_per_second = 6
 miss_rate = 8*frame_per_second
 confident_rate = 0.28
 similar_rate = 50
-path_bg = '../data/all_imgs/bg'
-path = '../data/vehicle'
+path_bg = '/content/drive/My Drive/sc-duc/bg'
+path = '/content/drive/My Drive/sc-duc/result'
 # car_cascade = cv2.CascadeClassifier(os.path.join(path,'cars.xml'))
 ans = []
 
 from darkflow.net.build import TFNet
 
 options = {"model": "cfg/yolo.cfg", 
-           "load": "cfg/yolo.weights", 
+           "load": "/content/drive/My Drive/sc-duc/model /yolo.weights", 
            "threshold": 0.1, 
            "gpu": 1.0}
 

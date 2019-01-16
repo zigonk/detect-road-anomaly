@@ -5,8 +5,8 @@ videos = os.listdir(rt)
 #path for original frames
 wrt_ori = './data/all_imgs/all'
 #path for background frames
-# wrt_bg = '/content/drive/My Drive/sc-duc/bg'
-wrt_bg = './data/all_imgs/bg'
+wrt_bg = '/content/drive/My Drive/sc-duc/bg'
+# wrt_bg = './data/all_imgs/bg'
 if not os.path.exists(wrt_ori):
     os.mkdir(wrt_ori)
 if not os.path.exists(wrt_bg):
@@ -40,7 +40,7 @@ for video in videos:
         #filter frame
         if count%5 == 0 :
             cv2.imwrite(os.path.join(wrt_bg, video.split('.')[0], str(int(count)).zfill(5)+'.jpg'), bg_img)
-            cv2.imwrite(os.path.join(wrt_ori, video.split('.')[0], str(int(count)).zfill(5)+'.jpg'), frame)
+            # cv2.imwrite(os.path.join(wrt_ori, video.split('.')[0], str(int(count)).zfill(5)+'.jpg'), frame)
         ret, frame = cap.read()
         count += 1
     #out.release()
